@@ -15,8 +15,8 @@
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://murilomissura.com.br/">
-<meta name="theme-color" content="#0E0F11">
-<link rel="icon" href="assets/logo/avatar-grafite.svg" type="image/svg+xml">
+<meta name="theme-color" content="#F5F7FA">
+<link rel="icon" href="assets/logo/avatar-azul.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap">
@@ -31,7 +31,7 @@
 
 <header class="top">
   <div class="wrap">
-    <a href="#inicio" aria-label="Murilo Missura, início"><img src="assets/logo/logo-horizontal-negativo.svg" alt="Murilo Missura" width="200" height="22"></a>
+    <a href="#inicio" aria-label="Murilo Missura, início"><img src="assets/logo/logo-horizontal-positivo.svg" alt="Murilo Missura" width="200" height="22"></a>
     <nav class="nav" aria-label="Principal">
       <a class="lk" href="#novamericana">Novamericana</a>
       <a class="lk" href="#podcast">Podcast</a>
@@ -44,7 +44,14 @@
 <main id="conteudo">
 
 <!-- HERO -->
-<section class="hero dark" id="inicio">
+<section class="hero" id="inicio">
+  <div class="dots" aria-hidden="true"></div>
+  <svg class="dataline" viewBox="0 0 1000 240" preserveAspectRatio="none" aria-hidden="true">
+    <defs><linearGradient id="mmfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3274A5" stop-opacity=".10"/><stop offset="1" stop-color="#3274A5" stop-opacity="0"/></linearGradient></defs>
+    <path class="area" d="M0 212 L110 190 L200 204 L320 160 L420 178 L550 128 L650 146 L780 86 L880 104 L985 24 L985 240 L0 240Z"/>
+    <path class="ln" d="M0 212 L110 190 L200 204 L320 160 L420 178 L550 128 L650 146 L780 86 L880 104 L985 24"/>
+  </svg>
+  <span class="dl-pt" aria-hidden="true"></span>
   <div class="wrap">
     <div>
       <p class="eyebrow">Engenheiro de computação · Professor na Novamericana</p>
@@ -66,23 +73,25 @@
 <div class="proof">
   <div class="wrap">
     <div class="grid">
-      <div class="it"><b>14</b><span>Turmas como professor</span></div>
-      <div class="it"><b>10</b><span>Cidades em 7 estados</span></div>
-      <div class="it"><b>26</b><span>Avaliações de alunos</span></div>
+      <div class="it"><b data-count="14">14</b><span>Turmas como professor</span></div>
+      <div class="it"><b data-count="10">10</b><span>Cidades em 7 estados</span></div>
+      <div class="it"><b data-count="26">26</b><span>Avaliações de alunos</span></div>
     </div>
     <small>Turmas de out/2025 a nov/2026, presenciais e online. Avaliações públicas no Google e no Facebook.</small>
   </div>
 </div>
 
+<div class="marquee" role="img" aria-label="Cidades onde já dei aula: São José do Rio Preto/SP, Cuiabá/MT, Curitiba/PR, Franca/SP, Brasília/DF, Rio de Janeiro/RJ, Florianópolis/SC, Foz do Iguaçu/PR, Ribeirão Preto/SP, Campo Grande/MS"><div class="track"><span>São José do Rio Preto · SP</span><span>Cuiabá · MT</span><span>Curitiba · PR</span><span>Franca · SP</span><span>Brasília · DF</span><span>Rio de Janeiro · RJ</span><span>Florianópolis · SC</span><span>Foz do Iguaçu · PR</span><span>Ribeirão Preto · SP</span><span>Campo Grande · MS</span><span aria-hidden="true">São José do Rio Preto · SP</span><span aria-hidden="true">Cuiabá · MT</span><span aria-hidden="true">Curitiba · PR</span><span aria-hidden="true">Franca · SP</span><span aria-hidden="true">Brasília · DF</span><span aria-hidden="true">Rio de Janeiro · RJ</span><span aria-hidden="true">Florianópolis · SC</span><span aria-hidden="true">Foz do Iguaçu · PR</span><span aria-hidden="true">Ribeirão Preto · SP</span><span aria-hidden="true">Campo Grande · MS</span></div></div>
+
 <!-- COMO EU ENSINO -->
 <section id="como">
   <div class="wrap">
     <p class="eyebrow">Como eu ensino</p>
-    <h2 class="h-d">O Gustavo explica a estratégia. Eu fico do seu lado até ela funcionar na sua conta<span class="ponto"></span></h2>
+    <h2 class="reveal h-d">O Gustavo explica a estratégia. Eu fico do seu lado até ela funcionar na sua conta<span class="ponto"></span></h2>
     <div class="steps">
-      <div class="step"><span class="n">01</span><h3 class="h3">Entender</h3><p>O conceito em linguagem simples, com exemplo do seu próprio negócio, não de manual.</p></div>
-      <div class="step"><span class="n">02</span><h3 class="h3">Configurar junto</h3><p>Você abre a sua conta e eu acompanho cada passo: conta, público, criativo, rastreamento.</p></div>
-      <div class="step"><span class="n">03</span><h3 class="h3">Sair rodando</h3><p>Você sai da imersão com no mínimo 5 campanhas prontas, montadas por você, na sua conta.</p></div>
+      <div class="reveal step"><span class="n">01</span><h3 class="h3">Entender</h3><p>O conceito em linguagem simples, com exemplo do seu próprio negócio, não de manual.</p></div>
+      <div class="reveal step"><span class="n">02</span><h3 class="h3">Configurar junto</h3><p>Você abre a sua conta e eu acompanho cada passo: conta, público, criativo, rastreamento.</p></div>
+      <div class="reveal step"><span class="n">03</span><h3 class="h3">Sair rodando</h3><p>Você sai da imersão com no mínimo 5 campanhas prontas, montadas por você, na sua conta.</p></div>
     </div>
   </div>
 </section>
@@ -93,18 +102,18 @@
     <div class="split">
       <div>
         <p class="eyebrow">Novamericana Business School</p>
-        <h2 class="h-d">Imersões presenciais em todo o Brasil</h2>
+        <h2 class="reveal h-d">Imersões presenciais em todo o Brasil</h2>
         <p class="lead">Sou cofundador e professor da Novamericana Business School, que leva imersões de marketing, vendas e IA para cidades de todo o país. Aulas 100% práticas, com acompanhamento de perto em cada passo.</p>
         <img class="nova-logo" src="assets/logo/novamericana.png" alt="Novamericana Business School" width="240" height="22">
         <p><a class="btn btn-secondary" href="https://novamericana.com.br" target="_blank" rel="noopener">Conhecer a Novamericana →</a></p>
       </div>
       <div class="courses">
-        <div class="card course">
+        <div class="reveal card course">
           <span class="tag">2 dias · 100% prática</span>
           <h3 class="h3">Imersão Tráfego Pago com IA</h3>
           <p>Google Ads, Meta Ads e ChatGPT Ads. Campanhas reais montadas em sala, com acompanhamento.</p>
         </div>
-        <div class="card course">
+        <div class="reveal card course">
           <span class="tag">A partir de 2027</span>
           <h3 class="h3">Imersão IA para Empresas</h3>
           <p>Inteligência artificial aplicada às áreas da empresa: administrativo, vendas, marketing, financeiro, RH e jurídico.</p>
@@ -115,7 +124,7 @@
     <div class="cities-wrap">
       <p class="eyebrow">Próximas turmas</p>
       <h3 class="h-d" style="font-size:32px;line-height:38px">Onde vamos estar</h3>
-      <div class="cities"><div class="city"><span class="m">Jan/2027</span><h3>Ribeirão Preto/SP</h3><span class="c">IA para Empresas</span></div><div class="city"><span class="m">Jan/2027</span><h3>São José do Rio Preto/SP</h3><span class="c">Tráfego Pago com IA</span></div><div class="city"><span class="m">Fev/2027</span><h3>Campo Grande/MS</h3><span class="c">IA para Empresas</span></div><div class="city"><span class="m">Fev/2027</span><h3>Cuiabá/MT</h3><span class="c">Tráfego Pago com IA</span></div><div class="city"><span class="m">Mar/2027</span><h3>Brasília/DF</h3><span class="c">IA para Empresas</span></div><div class="city"><span class="m">Mar/2027</span><h3>Florianópolis/SC</h3><span class="c">Tráfego Pago com IA</span></div></div>
+      <div class="cities"><div class="reveal city"><span class="m">Jan/2027</span><h3>Ribeirão Preto/SP</h3><span class="c">IA para Empresas</span></div><div class="reveal city"><span class="m">Jan/2027</span><h3>São José do Rio Preto/SP</h3><span class="c">Tráfego Pago com IA</span></div><div class="reveal city"><span class="m">Fev/2027</span><h3>Campo Grande/MS</h3><span class="c">IA para Empresas</span></div><div class="reveal city"><span class="m">Fev/2027</span><h3>Cuiabá/MT</h3><span class="c">Tráfego Pago com IA</span></div><div class="reveal city"><span class="m">Mar/2027</span><h3>Brasília/DF</h3><span class="c">IA para Empresas</span></div><div class="reveal city"><span class="m">Mar/2027</span><h3>Florianópolis/SC</h3><span class="c">Tráfego Pago com IA</span></div></div>
       <p style="margin-top:24px"><a class="btn btn-wa" href="https://wa.me/5519971027173?text=Ol%C3%A1%2C%20Murilo!%20Vi%20seu%20site%20e%20quero%20garantir%20minha%20vaga%20em%20uma%20imers%C3%A3o." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Garantir minha vaga</a></p>
     </div>
 
@@ -125,15 +134,15 @@
       <h3 class="h-d" style="font-size:32px;line-height:38px">Confira algumas fotos das nossas turmas</h3>
     </div>
     <div class="turmas" style="margin-top:24px">
-      <figure class="turma destaque"><img src="assets/img/turmas/2026-10_campo-grande.webp" alt="Turma de Campo Grande, outubro de 2026" loading="lazy" width="1200" height="900"><figcaption>Campo Grande/MS · out/2026</figcaption></figure>
-      <figure class="turma"><img src="assets/img/turmas/2026-09_ribeirao-preto.webp" alt="Turma de Ribeirão Preto, setembro de 2026" loading="lazy" width="1200" height="900"><figcaption>Ribeirão Preto/SP · set/2026</figcaption></figure>
-      <figure class="turma"><img src="assets/img/turmas/2026-08_foz-do-iguacu.webp" alt="Turma de Foz do Iguaçu, agosto de 2026" loading="lazy" width="1200" height="900"><figcaption>Foz do Iguaçu/PR · ago/2026</figcaption></figure>
-      <figure class="turma"><img src="assets/img/turmas/2026-08_florianopolis.webp" alt="Turma de Florianópolis, agosto de 2026" loading="lazy" width="1200" height="900"><figcaption>Florianópolis/SC · ago/2026</figcaption></figure>
-      <figure class="turma"><img src="assets/img/turmas/2026-07_rio-de-janeiro.webp" alt="Turma do Rio de Janeiro, julho de 2026" loading="lazy" width="1200" height="900"><figcaption>Rio de Janeiro/RJ · jul/2026</figcaption></figure>
-      <figure class="turma"><img src="assets/img/turmas/2026-06_cuiaba.webp" alt="Turma de Cuiabá, junho de 2026" loading="lazy" width="1200" height="900"><figcaption>Cuiabá/MT · jun/2026</figcaption></figure>
-      <figure class="turma"><img src="assets/img/turmas/2026-02_curitiba.webp" alt="Turma de Curitiba, fevereiro de 2026" loading="lazy" width="1200" height="900"><figcaption>Curitiba/PR · fev/2026</figcaption></figure>
-      <figure class="turma"><img src="assets/img/turmas/2025-12_cuiaba.webp" alt="Turma de Cuiabá, dezembro de 2025" loading="lazy" width="1200" height="900"><figcaption>Cuiabá/MT · dez/2025</figcaption></figure>
-      <figure class="turma"><img src="assets/img/turmas/2025-10_sao-jose-do-rio-preto.webp" alt="Turma de São José do Rio Preto, outubro de 2025" loading="lazy" width="1200" height="900"><figcaption>São José do Rio Preto/SP · out/2025</figcaption></figure>
+      <figure class="reveal turma destaque"><img src="assets/img/turmas/2026-10_campo-grande.webp" alt="Turma de Campo Grande, outubro de 2026" loading="lazy" width="1200" height="900"><figcaption>Campo Grande/MS · out/2026</figcaption></figure>
+      <figure class="reveal turma"><img src="assets/img/turmas/2026-09_ribeirao-preto.webp" alt="Turma de Ribeirão Preto, setembro de 2026" loading="lazy" width="1200" height="900"><figcaption>Ribeirão Preto/SP · set/2026</figcaption></figure>
+      <figure class="reveal turma"><img src="assets/img/turmas/2026-08_foz-do-iguacu.webp" alt="Turma de Foz do Iguaçu, agosto de 2026" loading="lazy" width="1200" height="900"><figcaption>Foz do Iguaçu/PR · ago/2026</figcaption></figure>
+      <figure class="reveal turma"><img src="assets/img/turmas/2026-08_florianopolis.webp" alt="Turma de Florianópolis, agosto de 2026" loading="lazy" width="1200" height="900"><figcaption>Florianópolis/SC · ago/2026</figcaption></figure>
+      <figure class="reveal turma"><img src="assets/img/turmas/2026-07_rio-de-janeiro.webp" alt="Turma do Rio de Janeiro, julho de 2026" loading="lazy" width="1200" height="900"><figcaption>Rio de Janeiro/RJ · jul/2026</figcaption></figure>
+      <figure class="reveal turma"><img src="assets/img/turmas/2026-06_cuiaba.webp" alt="Turma de Cuiabá, junho de 2026" loading="lazy" width="1200" height="900"><figcaption>Cuiabá/MT · jun/2026</figcaption></figure>
+      <figure class="reveal turma"><img src="assets/img/turmas/2026-02_curitiba.webp" alt="Turma de Curitiba, fevereiro de 2026" loading="lazy" width="1200" height="900"><figcaption>Curitiba/PR · fev/2026</figcaption></figure>
+      <figure class="reveal turma"><img src="assets/img/turmas/2025-12_cuiaba.webp" alt="Turma de Cuiabá, dezembro de 2025" loading="lazy" width="1200" height="900"><figcaption>Cuiabá/MT · dez/2025</figcaption></figure>
+      <figure class="reveal turma"><img src="assets/img/turmas/2025-10_sao-jose-do-rio-preto.webp" alt="Turma de São José do Rio Preto, outubro de 2025" loading="lazy" width="1200" height="900"><figcaption>São José do Rio Preto/SP · out/2025</figcaption></figure>
     </div>
   </div>
 </section>
@@ -142,25 +151,25 @@
 <section id="avaliacoes" style="background:#F1F3F4;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
     <p class="eyebrow">O que os alunos dizem</p>
-    <h2 class="h-d" style="margin-bottom:40px">Avaliações reais, no Google e no Facebook</h2>
-    <div class="reviews"><div class="rv big"><div class="rv-head"><span class="rv-av" style="background:#1A73E8">M</span><div><div class="rv-name">Marcelo Braga</div><div class="rv-meta">Local Guide · 28 avaliações</div></div></div><div class="rv-stars"><span>★★★★★</span>jun/2026</div><p>“Concluir o curso de Google Ads e IA foi muito mais do que adquirir conhecimento técnico. […] Um agradecimento especial ao Murilo, um verdadeiro irmãozão, sempre presente e disposto a ajudar, oferecendo suporte e incentivo quando necessário. […] Saio deste curso não apenas com conhecimento, mas com esperança renovada, motivação e a certeza de que estou no caminho certo.”</p><div class="rv-src"><i class="rv-g"></i><b>Google</b>&nbsp;· Novamericana Business School</div></div><div class="rv"><div class="rv-head"><span class="rv-av" style="background:#0B8043">R</span><div><div class="rv-name">Ronaldo Carreiro</div><div class="rv-meta">5 avaliações</div></div></div><div class="rv-stars"><span>★★★★★</span>jul/2026</div><p>Gustavo e Murilo são simplesmente incríveis. Sou muito grato pela paciência e pela didática em aula.</p><div class="rv-src"><i class="rv-g"></i><b>Google</b>&nbsp;· Novamericana Business School</div></div><div class="rv"><div class="rv-head"><span class="rv-av" style="background:#E8710A">I</span><div><div class="rv-name">Isabela Yule</div><div class="rv-meta">2 avaliações</div></div></div><div class="rv-stars"><span>★★★★★</span>jun/2026</div><p>A experiência de participar desse curso é sem igual! Cheguei no curso sem nunca ter visto a plataforma do Google Ads e hoje já me sinto capaz de investir o meu próprio dinheiro […]. Murilo e Anderson são profissionais excelentes que dão apoio ao longo de todas as aulas.</p><div class="rv-src"><i class="rv-g"></i><b>Google</b>&nbsp;· Novamericana Business School</div></div><div class="rv"><div class="rv-head"><span class="rv-av" style="background:#7B1FA2">T</span><div><div class="rv-name">Thiago Rossi</div><div class="rv-meta">Local Guide · 142 avaliações</div></div></div><div class="rv-stars"><span>★★★★★</span>jul/2026</div><p>Inesquecível. Detalhes que aprendi que mudou meu faturamento em um dia de teste. Erros que não irei cometer mais. Suporte maravilhoso. Gustavo é top. Anderson super atencioso. Murilo muito paciente. Equipe de ouro.</p><div class="rv-src"><i class="rv-g"></i><b>Google</b>&nbsp;· Novamericana Business School</div></div><div class="rv fb"><div class="rv-head"><span class="rv-av" style="background:#1877F2">O</span><div><div class="rv-name">Oliviero Frank</div><div class="rv-rec"><i>●</i> recomenda <b>Novamericana Business School</b> · nov/2026</div></div></div><p>Fiz 2 cursos da NOVAMERICANA. Os professores Murilo e Gustavo são extremamente competentes, sabem muito sobre o conteúdo. Recomendo.</p><div class="rv-src"><i class="rv-f">f</i><b>Facebook</b>&nbsp;· Recomendação</div></div><div class="rv"><div class="rv-head"><span class="rv-av" style="background:#5E35B1">D</span><div><div class="rv-name">Dra Catharine Barbosa</div><div class="rv-meta">5 avaliações</div></div></div><div class="rv-stars"><span>★★★★★</span>jul/2026</div><p>Muita satisfeita com a experiência, Murilo e Gustavo são muito atenciosos durante todo o processo, além da ótima didática!</p><div class="rv-src"><i class="rv-g"></i><b>Google</b>&nbsp;· Novamericana Business School</div></div><div class="rv"><div class="rv-head"><span class="rv-av" style="background:#795548">S</span><div><div class="rv-name">Silvio Rabelo</div><div class="rv-meta">1 avaliação</div></div></div><div class="rv-stars"><span>★★★★★</span>jul/2026</div><p>Gustavo, Murilo e Anderson arrasaram, com toda certeza o curso é sensacional, eles tiram as dúvidas, dão auxílio, suporte e conseguem realmente tirar o conhecimento do zero a prática.</p><div class="rv-src"><i class="rv-g"></i><b>Google</b>&nbsp;· Novamericana Business School</div></div></div>
+    <h2 class="reveal h-d" style="margin-bottom:40px">Avaliações reais, no Google e no Facebook</h2>
+    <div class="reviews"><div class="reveal rv big"><div class="reveal rv-head"><span class="rv-av" style="background:#1A73E8">M</span><div><div class="reveal rv-name">Marcelo Braga</div><div class="reveal rv-meta">Local Guide · 28 avaliações</div></div></div><div class="reveal rv-stars"><span>★★★★★</span>jun/2026</div><p>“Concluir o curso de Google Ads e IA foi muito mais do que adquirir conhecimento técnico. […] Um agradecimento especial ao Murilo, um verdadeiro irmãozão, sempre presente e disposto a ajudar, oferecendo suporte e incentivo quando necessário. […] Saio deste curso não apenas com conhecimento, mas com esperança renovada, motivação e a certeza de que estou no caminho certo.”</p><div class="reveal rv-src"><i class="rv-g"></i><b>Google</b>&nbsp;· Novamericana Business School</div></div><div class="reveal rv"><div class="reveal rv-head"><span class="rv-av" style="background:#0B8043">R</span><div><div class="reveal rv-name">Ronaldo Carreiro</div><div class="reveal rv-meta">5 avaliações</div></div></div><div class="reveal rv-stars"><span>★★★★★</span>jul/2026</div><p>Gustavo e Murilo são simplesmente incríveis. Sou muito grato pela paciência e pela didática em aula.</p><div class="reveal rv-src"><i class="rv-g"></i><b>Google</b>&nbsp;· Novamericana Business School</div></div><div class="reveal rv"><div class="reveal rv-head"><span class="rv-av" style="background:#E8710A">I</span><div><div class="reveal rv-name">Isabela Yule</div><div class="reveal rv-meta">2 avaliações</div></div></div><div class="reveal rv-stars"><span>★★★★★</span>jun/2026</div><p>A experiência de participar desse curso é sem igual! Cheguei no curso sem nunca ter visto a plataforma do Google Ads e hoje já me sinto capaz de investir o meu próprio dinheiro […]. Murilo e Anderson são profissionais excelentes que dão apoio ao longo de todas as aulas.</p><div class="reveal rv-src"><i class="rv-g"></i><b>Google</b>&nbsp;· Novamericana Business School</div></div><div class="reveal rv"><div class="reveal rv-head"><span class="rv-av" style="background:#7B1FA2">T</span><div><div class="reveal rv-name">Thiago Rossi</div><div class="reveal rv-meta">Local Guide · 142 avaliações</div></div></div><div class="reveal rv-stars"><span>★★★★★</span>jul/2026</div><p>Inesquecível. Detalhes que aprendi que mudou meu faturamento em um dia de teste. Erros que não irei cometer mais. Suporte maravilhoso. Gustavo é top. Anderson super atencioso. Murilo muito paciente. Equipe de ouro.</p><div class="reveal rv-src"><i class="rv-g"></i><b>Google</b>&nbsp;· Novamericana Business School</div></div><div class="reveal rv fb"><div class="reveal rv-head"><span class="rv-av" style="background:#1877F2">O</span><div><div class="reveal rv-name">Oliviero Frank</div><div class="reveal rv-rec"><i>●</i> recomenda <b>Novamericana Business School</b> · nov/2026</div></div></div><p>Fiz 2 cursos da NOVAMERICANA. Os professores Murilo e Gustavo são extremamente competentes, sabem muito sobre o conteúdo. Recomendo.</p><div class="reveal rv-src"><i class="rv-f">f</i><b>Facebook</b>&nbsp;· Recomendação</div></div><div class="reveal rv"><div class="reveal rv-head"><span class="rv-av" style="background:#5E35B1">D</span><div><div class="reveal rv-name">Dra Catharine Barbosa</div><div class="reveal rv-meta">5 avaliações</div></div></div><div class="reveal rv-stars"><span>★★★★★</span>jul/2026</div><p>Muita satisfeita com a experiência, Murilo e Gustavo são muito atenciosos durante todo o processo, além da ótima didática!</p><div class="reveal rv-src"><i class="rv-g"></i><b>Google</b>&nbsp;· Novamericana Business School</div></div><div class="reveal rv"><div class="reveal rv-head"><span class="rv-av" style="background:#795548">S</span><div><div class="reveal rv-name">Silvio Rabelo</div><div class="reveal rv-meta">1 avaliação</div></div></div><div class="reveal rv-stars"><span>★★★★★</span>jul/2026</div><p>Gustavo, Murilo e Anderson arrasaram, com toda certeza o curso é sensacional, eles tiram as dúvidas, dão auxílio, suporte e conseguem realmente tirar o conhecimento do zero a prática.</p><div class="reveal rv-src"><i class="rv-g"></i><b>Google</b>&nbsp;· Novamericana Business School</div></div></div>
     <p class="note">Avaliações públicas transcritas das plataformas; […] indica trecho omitido. Resultados variam conforme cada negócio. Veja todas no <a href="https://maps.app.goo.gl/te6Mt1kuoHh7A6iWA" target="_blank" rel="noopener">Google</a> e no <a href="https://www.facebook.com/novamericanabs/reviews" target="_blank" rel="noopener">Facebook</a>.</p>
   </div>
 </section>
 
 <!-- PODCAST -->
-<section class="dark" id="podcast">
+<section id="podcast" style="background:var(--surface-raised);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
     <p class="eyebrow">Podcast NovaMente</p>
-    <h2 class="h-d">Toda semana, marketing e tráfego sem enrolação</h2>
+    <h2 class="reveal h-d">Toda semana, marketing e tráfego sem enrolação</h2>
     <p class="lead">O podcast da Novamericana, com Murilo Missura e Gustavo Missura. Dois episódios para começar:</p>
     <div class="eps">
-      <a class="card ep" href="https://www.youtube.com/@novamericana/podcasts" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+      <a class="reveal card ep" href="https://www.youtube.com/@novamericana/podcasts" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
         <span class="num">Episódio 25 · 55 min</span>
         <h3 class="h3">Como o Grupo Abevê trocou o impresso pelo digital</h3>
         <p>Com Jair Barbosa e Erick Coelho, do Grupo Abevê: comunicação digital no varejo supermercadista.</p>
       </a>
-      <a class="card ep" href="https://www.youtube.com/@novamericana/podcasts" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+      <a class="reveal card ep" href="https://www.youtube.com/@novamericana/podcasts" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
         <span class="num">Episódio 20 · 46 min</span>
         <h3 class="h3">Como é a Imersão Tráfego Pago com IA</h3>
         <p>O que acontece nos dois dias de imersão e com o que você sai de lá.</p>
@@ -179,11 +188,11 @@
 <section id="empresas" style="background:var(--surface-raised);border-top:1px solid var(--line)">
   <div class="wrap">
     <img class="mn-logo" src="assets/logo/missura-networks-positivo.svg" alt="Missura Networks" width="260" height="24">
-    <h2 class="h-d">Precisa de um gestor de tráfego?</h2>
+    <h2 class="reveal h-d">Precisa de um gestor de tráfego?</h2>
     <p class="lead">Na Missura Networks, trabalhamos com resultados reais. Gestão de campanhas no Google Ads e no Meta Ads, sites e landing pages, com acompanhamento de perto e números claros todo mês.</p>
     <div class="services"><span class="tag">Gestão de tráfego</span><span class="tag">Sites</span><span class="tag">Landing pages</span></div>
     <div class="cases">
-      <article class="card case">
+      <article class="reveal card case">
         <span class="tag">Odontologia</span>
         <h3>Clínica odontológica</h3>
         <div class="res">
@@ -193,7 +202,7 @@
         </div>
         <p class="src">Fonte: Gerenciador de Anúncios Meta.</p>
       </article>
-      <article class="card case">
+      <article class="reveal card case">
         <span class="tag">Alimentação</span>
         <h3>Lanchonete</h3>
         <div class="res">
@@ -213,7 +222,7 @@
     <div class="split">
       <div>
         <p class="eyebrow">Próximos projetos</p>
-        <h2 class="h-d">O que vem em 2027</h2>
+        <h2 class="reveal h-d">O que vem em 2027</h2>
         <p class="lead">Em 2027, a Novamericana inclui no calendário a Imersão IA para Empresas, com as primeiras turmas já confirmadas em Ribeirão Preto, Campo Grande e Brasília. Novos cursos também estão a caminho.</p>
       </div>
       <div>
@@ -235,7 +244,7 @@
 <section class="dark final">
   <div class="wrap">
     <p class="eyebrow">Vamos conversar</p>
-    <h2 class="h-d">Quer aprender tráfego pago fazendo, não assistindo<span class="ponto"></span></h2>
+    <h2 class="reveal h-d">Quer aprender tráfego pago fazendo, não assistindo<span class="ponto"></span></h2>
     <p class="lead">Me chame no WhatsApp. Eu mesmo respondo.</p>
     <div class="ctas"><a class="btn btn-wa" href="https://wa.me/5519971027173?text=Ol%C3%A1%2C%20Murilo!%20Vi%20seu%20site%20e%20quero%20saber%20mais%20sobre%20as%20imers%C3%B5es." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Chamar no WhatsApp</a></div>
   </div>
@@ -257,5 +266,18 @@
 </footer>
 
 <a class="wa-float" href="https://wa.me/5519971027173?text=Ol%C3%A1%2C%20Murilo!%20Vi%20seu%20site%20e%20quero%20saber%20mais%20sobre%20as%20imers%C3%B5es." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg><use href="#wa"/></svg></a>
+<script>
+(function(){
+  var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=document.querySelectorAll('.reveal');
+  if(rm||!('IntersectionObserver' in window)){for(var i=0;i<els.length;i++)els[i].classList.add('in');return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  Array.prototype.forEach.call(els,function(e){var p=e.parentElement,k=Array.prototype.indexOf.call(p.children,e);e.style.transitionDelay=Math.min(k,5)*70+'ms';io.observe(e)});
+  var co=new IntersectionObserver(function(en){en.forEach(function(x){if(!x.isIntersecting)return;co.unobserve(x.target);var el=x.target,end=+el.getAttribute('data-count'),t0=null;
+    function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/1400,1);el.textContent=Math.round(end*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)}
+    el.textContent='0';requestAnimationFrame(f)})},{threshold:.5});
+  Array.prototype.forEach.call(document.querySelectorAll('[data-count]'),function(n){co.observe(n)});
+})();
+</script>
 </body>
 </html>
