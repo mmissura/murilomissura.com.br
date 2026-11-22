@@ -307,3 +307,8 @@ body.ck-on .wa-float{bottom:132px}
 @media (max-width:620px){.ck{flex-direction:column;align-items:stretch}.ck-b .btn{flex:1;justify-content:center}}
 .linkbtn{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:underline}
 @media (prefers-reduced-motion:reduce){.tk,.tk-cta span{transition:none}}
+
+.cases-title{font-size:24px;line-height:30px;letter-spacing:-.04em;margin:56px 0 4px}
+.cases-sub{margin:0;color:var(--ink-muted);font-size:15px}
+@media (max-width:720px){.cases-title{font-size:20px;line-height:26px;margin-top:40px}}
+.cases-sub+.cases{margin-top:24px}
