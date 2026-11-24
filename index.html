@@ -2,6 +2,15 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
+<!-- Consentimento (Consent Mode v2) + Google Tag Manager -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});
+gtag('set','ads_data_redaction',true);
+try{if(localStorage.getItem('mm-consent')==='yes'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});dataLayer.push({event:'consent_ready',consent:'granted'});}}catch(e){}
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TDWP5HX4');
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Murilo Missura · Tráfego pago, na prática.</title>
 <meta name="description" content="Engenheiro de computação, cofundador e professor das imersões de tráfego pago da Novamericana. Google Ads, Meta Ads e ChatGPT Ads na prática.">
@@ -20,6 +29,8 @@
 <link rel="stylesheet" href="assets/css/site.css?v=5">
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDWP5HX4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -320,7 +331,7 @@
 
 
 <div class="ck" id="ck" role="dialog" aria-live="polite" aria-label="Aviso de cookies" hidden>
-  <p>Este site não usa cookies de rastreamento. Conteúdos de terceiros, como o player do Spotify, só carregam se você aceitar. <a href="privacidade.html">Política de privacidade</a></p>
+  <p>Usamos cookies de análise (Google Analytics e Microsoft Clarity) e de anúncios (Google) para entender as visitas e melhorar o site, além do player do Spotify. Eles só funcionam se você aceitar. <a href="privacidade.html">Política de privacidade</a></p>
   <div class="ck-b"><button type="button" class="btn btn-secondary btn-sm" data-ck="no">Recusar</button><button type="button" class="btn btn-primary btn-sm" data-ck="yes">Aceitar</button></div>
 </div>
 <a class="wa-float" href="https://wa.me/5519971027173?text=Ol%C3%A1%2C%20Murilo!%20Vi%20seu%20site%20e%20quero%20saber%20mais%20sobre%20as%20imers%C3%B5es." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg><use href="#wa"/></svg></a>
@@ -349,14 +360,31 @@
   function set(v){try{localStorage.setItem(K,v)}catch(e){}}
   function loadPlayer(){if(!pl||pl.getAttribute('data-on'))return;pl.setAttribute('data-on','1');
     var f=document.createElement('iframe');f.src=pl.getAttribute('data-src');f.title='Player do podcast NovaMente no Spotify';f.loading='lazy';
-    f.allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';f.width='100%';f.height='352';f.style.border='0';pl.innerHTML='';pl.appendChild(f)}
+    f.allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';f.width='100%';f.height='352';f.style.border='0';pl.innerHTML='';pl.appendChild(f);window.dataLayer=window.dataLayer||[];dataLayer.push({event:'podcast_player_load'})}
   function show(){ck.hidden=false;document.body.classList.add('ck-on')}
   function hide(){ck.hidden=true;document.body.classList.remove('ck-on')}
   var v=get(); if(v==='yes')loadPlayer(); if(!v)show();
-  ck.addEventListener('click',function(e){var b=e.target.closest('[data-ck]');if(!b)return;var y=b.getAttribute('data-ck');set(y);hide();if(y==='yes')loadPlayer();else if(pl&&pl.getAttribute('data-on')){location.reload()}});
+  ck.addEventListener('click',function(e){var b=e.target.closest('[data-ck]');if(!b)return;var y=b.getAttribute('data-ck'),was=get();set(y);hide();
+    if(y==='yes'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});dataLayer.push({event:'consent_ready',consent:'granted'});loadPlayer();}
+    else if(was==='yes'||(pl&&pl.getAttribute('data-on'))){location.reload()}});
   var o=document.getElementById('ck-open');if(o)o.addEventListener('click',show);
   var p=document.getElementById('player-load');if(p)p.addEventListener('click',loadPlayer);
 })();
+</script>
+<script>
+/* medição: cliques no WhatsApp e no player */
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href*="wa.me"]');if(!a)return;
+  var tk=a.closest('.tk'),sec=a.closest('section,header,footer'),loc;
+  if(a.classList.contains('wa-float'))loc='botao_flutuante';
+  else if(a.closest('header.top'))loc='menu';
+  else if(tk)loc='card_turma';
+  else if(sec&&sec.closest('footer'))loc='rodape';
+  else loc=(sec&&sec.id)||'outro';
+  if(loc==='inicio')loc='hero';
+  window.dataLayer=window.dataLayer||[];
+  dataLayer.push({event:'whatsapp_click',wa_location:loc,wa_turma:tk?tk.querySelector('h3').textContent.trim():'',wa_text:(a.textContent||'').trim().slice(0,60)});
+},true);
 </script>
 </body>
 </html>
