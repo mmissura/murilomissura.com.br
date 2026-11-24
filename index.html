@@ -360,7 +360,7 @@ try{if(localStorage.getItem('mm-consent')==='yes'){gtag('consent','update',{ad_s
   function set(v){try{localStorage.setItem(K,v)}catch(e){}}
   function loadPlayer(){if(!pl||pl.getAttribute('data-on'))return;pl.setAttribute('data-on','1');
     var f=document.createElement('iframe');f.src=pl.getAttribute('data-src');f.title='Player do podcast NovaMente no Spotify';f.loading='lazy';
-    f.allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';f.width='100%';f.height='352';f.style.border='0';pl.innerHTML='';pl.appendChild(f);window.dataLayer=window.dataLayer||[];dataLayer.push({event:'podcast_player_load'})}
+    f.allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';f.width='100%';f.height='352';f.style.border='0';pl.innerHTML='';pl.appendChild(f)}
   function show(){ck.hidden=false;document.body.classList.add('ck-on')}
   function hide(){ck.hidden=true;document.body.classList.remove('ck-on')}
   var v=get(); if(v==='yes')loadPlayer(); if(!v)show();
@@ -368,7 +368,7 @@ try{if(localStorage.getItem('mm-consent')==='yes'){gtag('consent','update',{ad_s
     if(y==='yes'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});dataLayer.push({event:'consent_ready',consent:'granted'});loadPlayer();}
     else if(was==='yes'||(pl&&pl.getAttribute('data-on'))){location.reload()}});
   var o=document.getElementById('ck-open');if(o)o.addEventListener('click',show);
-  var p=document.getElementById('player-load');if(p)p.addEventListener('click',loadPlayer);
+  var p=document.getElementById('player-load');if(p)p.addEventListener('click',function(){loadPlayer();window.dataLayer=window.dataLayer||[];dataLayer.push({event:'podcast_player_load'})});
 })();
 </script>
 <script>
